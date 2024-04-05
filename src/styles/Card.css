@@ -1,0 +1,43 @@
+.card {
+    width: calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardImg img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.cardName {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    /* height: 100%; */
+}
+
+.cardName h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        width: calc(33% - 1rem); /* Adjust card width for large screens */
+        max-width: 200px; /* Set max-width for larger screens */
+    }
+
+    .cardName h3 {
+        margin: 0;
+        font-size: 0.7rem;
+        color: #333;
+    }
+}
